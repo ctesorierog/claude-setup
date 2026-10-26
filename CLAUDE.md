@@ -9,3 +9,8 @@ This repo is the source of my Claude Code kit. `~/.claude/commands`, `~/.claude/
 - Commands and agents use `description` frontmatter that says WHEN to use them. Check with `writing-for-agents` when editing one.
 - This repo is public. Never commit secrets, tokens, `.credentials.json`, or anything from `~/.claude` other than the files listed in README.md. Use `~` or `$env:USERPROFILE` instead of my full user path.
 - Test a change by opening a new Claude Code session and running the command; say what you ran and what it printed.
+
+## Test (run in Bash; every line must say ok)
+```bash
+cd ~/dev/claude-setup && for f in commands/*.md agents/*.md skills/playbook/SKILL.md; do cmp -s "$f" ~/.claude/"$f" && echo "ok $f" || echo "FAIL $f"; done; grep -q "@~/dev/claude-setup/global/CLAUDE.md" ~/.claude/CLAUDE.md && echo "ok import" || echo "FAIL import"
+```

@@ -14,4 +14,4 @@
 | Built 24 to 27 Oct 2026, first in the flAIre repo's Claude session | `HANDOFF.md` |
 
 ## Open questions
-- [ ] Does Claude Code follow the `@~/dev/claude-setup/global/CLAUDE.md` import in every session? (check at the next session start)
+- [x] Does Claude Code follow the `@~/dev/claude-setup/global/CLAUDE.md` import in every session? Yes: session 2 loaded it at start (27 Oct 2026).
