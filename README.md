@@ -1,6 +1,6 @@
 # claude-setup
 
-My Claude Code setup, kept as a project: a 9-phase playbook, the commands and agents that run it, and a helper that tells me which tool to use next. Built after I ended up with 8 plugins, 66 skills and no idea when to use what.
+The one place my Claude Code setup lives: a 9-phase playbook, the commands and agents that run it, and a helper that tells me which tool to use next. Built after I ended up with 8 plugins, 66 skills and no idea when to use what.
 
 Start with [GUIDE.md](GUIDE.md): what every file, command, skill and agent is for, and the daily routine.
 
@@ -14,7 +14,19 @@ Start with [GUIDE.md](GUIDE.md): what every file, command, skill and agent is fo
 | `agents/` | `judge` `skeptic` `domain-expert` `ui-critic` `setup-advisor` | `~/.claude/agents` (link) |
 | `TOOLS.md` | Plugins, other people's skills, MCP servers and hooks, with install commands | read by `setup-advisor` |
 | `scripts/link.ps1` | Links `~/.claude` to this repo (backs up real folders first) | run once per machine |
-| `CONTEXT.md` `PLAN.md` `IDEAS.md` `HANDOFF.md` | This repo's own project memory | |
+| `IDEAS.md` | Parking lot for new tool ideas | read by `setup-advisor` |
+| `HANDOFF.md` | Where the last session here stopped | printed at session start |
+
+## How it's wired
+```mermaid
+flowchart LR
+  repo["~/dev/claude-setup (this repo)"] -->|junction| cmds["~/.claude/commands"]
+  repo -->|junction| agents["~/.claude/agents"]
+  repo -->|junction| pb["~/.claude/skills/playbook"]
+  repo -->|"@import"| gmd["~/.claude/CLAUDE.md"]
+  cmds & agents & pb & gmd --> cc["Claude Code, in every project"]
+  advisor["/helper → setup-advisor"] -->|reads| repo
+```
 
 ## Install on a machine
 

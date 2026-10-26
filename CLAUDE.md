@@ -3,7 +3,7 @@
 This repo is the source of my Claude Code kit. `~/.claude/commands`, `~/.claude/agents` and `~/.claude/skills/playbook` are links to folders here, and `~/.claude/CLAUDE.md` imports `global/CLAUDE.md`. Editing a file here changes it in every project immediately.
 
 ## Rules
-- Follow the playbook skill like any project. State lives in CONTEXT.md, PLAN.md, IDEAS.md, HANDOFF.md.
+- This is a config store, not a project: no playbook phases here. Make the change, try it in a new session, commit.
 - Keep it small: a new command, agent or skill must replace or simplify something, not just add. Ideas go to IDEAS.md first.
 - After changing a command, agent or skill, update GUIDE.md and TOOLS.md in the same commit, so the setup-advisor agent stays accurate.
 - Commands and agents use `description` frontmatter that says WHEN to use them. Check with `writing-for-agents` when editing one.
