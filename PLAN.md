@@ -16,7 +16,7 @@ flowchart LR
 |---|---|---|---|
 | 1 | Move the kit into this repo and link it | A file added here appears in `~/.claude`; `/where` still works in a new session | done |
 | 2 | `/helper` + `setup-advisor` agent | `/helper` in flAIre names the right phase and next command | todo |
-| 3 | Publish publicly; QR on the talk's closing slide | Repo opens logged out; QR scans to it | in progress |
+| 3 | Publish publicly; QR on the talk's closing slide | Repo opens logged out; QR scans to it | done |
 | 4 | Use it on the next real project, then a retro | Retro notes in IDEAS.md | todo |
 
 >> YOU ARE HERE: task 2, try `/helper` in a new session in the flAIre folder
