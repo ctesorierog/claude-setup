@@ -1,0 +1,9 @@
+# Secrets never belong in this repo
+.env
+.env.*
+*.key
+*.pem
+credentials*
+.credentials.json
+# Local-only Claude Code settings
+settings.local.json
