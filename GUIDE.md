@@ -42,7 +42,7 @@ A small task (one file, under 30 minutes) skips the playbook. Only the current p
 | `/deepen <idea>` | Brainstorm | A deeper, not bigger, version of an idea |
 | `/panel <file>` | Phases 3 and 8 | Judges, domain-expert and skeptic in parallel, merged into one ranked table |
 | `/checkpoint` | After every task | Tests, plan marker, HANDOFF.md, commit, push if a remote exists |
-| `/ui-pass` | UI work | Asks for 1–3 reference screenshots/URLs (saved in `design/refs/` with what I like), runs `impeccable shape` for new pages so I pick a direction, then builds and loops ui-critic, audit and screenshots until it passes |
+| `/ui-pass` | UI work | Asks for 1–3 reference screenshots/URLs (saved in `design/refs/` with what I like), runs `impeccable shape` for new pages so I pick a direction, builds, grades it on 8 points (point of view, type, colour, hierarchy, imagery, motion, mobile, invisible quality) and fixes in one batch, loops ui-critic until it passes, then a feel pass (one subtle motion per flat section) and a phone pass. No references yet: Dribbble, Awwwards, Pinterest, 21st.dev |
 
 Built into Claude Code: `/clear` (fresh chat), `/context` (how full the chat is), `/model`, `/init`, `/rewind` (undo). A project's own commands win over these inside that project.
 
