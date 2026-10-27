@@ -31,6 +31,19 @@ Removed: `codex` (needs a ChatGPT account).
 
 Install one with `npx skills add <repo> -s <skill> -g -a claude-code --copy -y` (without `-a claude-code -g` they land in `.agents/`, which Claude Code doesn't read). 50 more are parked in `~/.claude/skills-archive/`; move a folder back to use it again. To find a new one, type `/helper web <what you need>`: it checks the Claude Code docs, then skills.sh, and suggests up to 2 as IDEAS.md rows.
 
+## Skills synced from my claude.ai account (14, called `anthropic-skills:<name>`)
+
+Claude Code syncs them from my claude.ai account into `~/.claude/skills/synced/`, so there's nothing to install; to add or change one, do it in claude.ai, not in that folder.
+
+| Use | Skills | Source |
+|---|---|---|
+| Plan (phases 1, 3) | challenge-kickoff, blind-spot-panel | Made for me in claude.ai |
+| Build (phase 6) | expert-coding | Made for me in claude.ai |
+| UI (phase 7) | distinctive-ui | Made for me in claude.ai |
+| Deliver (phase 9) | demo-pitch | Made for me in claude.ai |
+| Files | pptx, docx, xlsx, pdf | Anthropic |
+| Other | docs, google-workspace, skill-creator, import-memory, morning | Anthropic examples |
+
 ## MCP servers
 
 | Server | Scope | Used for |
