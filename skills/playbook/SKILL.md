@@ -22,7 +22,7 @@ Templates for the gate files are in `templates/` next to this file. Copy them in
 | 4 | Focus and split | shortlist (3–7 items) and owners in PLAN.md | `/grill-with-docs`. Team: one branch per track, one data-contract file between tracks. Risky item: read-only spike first | – |
 | 5 | Plan and architecture | approved PLAN.md with `>> YOU ARE HERE` and decision log | Plan mode ("don't write code; read the files and explain how they work today"), then `superpowers:writing-plans`, then `blind-spot-panel` and `/deepen` once on PLAN.md, then skeptic on PLAN.md + a fresh-chat reviewer ("find what will break; don't rewrite"), then `/checkpoint` | skeptic |
 | 6 | Build | per task: test green, committed, pushed | From an Opus chat, `superpowers:subagent-driven-development` (implementer writes the test first, then code; reviewer checks against the plan; its helpers pick a cheaper model per task, Sonnet by default, so Opus only plans and reviews). Carlos reads the diff. `/checkpoint`, then `/clear` | skeptic for anything that produces numbers |
-| 7 | UI | screenshots pass ui-critic | one design reference (DESIGN.md), then `/ui-pass` | ui-critic |
+| 7 | UI | screenshots pass ui-critic | DESIGN.md, or 1–3 screenshots/URLs in `design/refs/` with what Carlos likes in each (one lead), then `/ui-pass` | ui-critic |
 | 8 | Verify and review | every CRITERIA.md item checked with evidence | skeptic on every claim, `/pr-review-toolkit:review-pr`, `/security-review` if online, final `/panel` | skeptic, judge |
 | 9 | Deliver and learn | delivered, lessons saved | CRITERIA.md checklist, `demo-pitch`, rehearse aloud. Retro: 3 worked, 3 didn't, lasting lessons into `~/.claude/CLAUDE.md` | – |
 

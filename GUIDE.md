@@ -24,7 +24,7 @@ A plugin is a box of skills, commands and hooks from someone else. An MCP is a p
 | 4 Focus | Shortlist and owners in PLAN.md | `/grill-with-docs` |
 | 5 Plan | Approved PLAN.md with `>> YOU ARE HERE` | Plan mode, `superpowers:writing-plans`, `blind-spot-panel` and `/deepen` once, `skeptic`, `/checkpoint` |
 | 6 Build | Per task: tests green, committed | `superpowers:subagent-driven-development` (from Opus; helpers code on Sonnet), `/checkpoint`, `/clear` |
-| 7 UI | Screenshots pass ui-critic | `/ui-pass` |
+| 7 UI | Screenshots pass ui-critic | Screenshots or URLs of sites I like, then `/ui-pass` |
 | 8 Verify | Every criterion has evidence | `skeptic`, `/pr-review-toolkit:review-pr`, final `/panel` |
 | 9 Deliver | Delivered, lessons saved | `demo-pitch`, rehearse, `retro`, lessons into `global/CLAUDE.md` |
 
@@ -42,7 +42,7 @@ A small task (one file, under 30 minutes) skips the playbook. Only the current p
 | `/deepen <idea>` | Brainstorm | A deeper, not bigger, version of an idea |
 | `/panel <file>` | Phases 3 and 8 | Judges, domain-expert and skeptic in parallel, merged into one ranked table |
 | `/checkpoint` | After every task | Tests, plan marker, HANDOFF.md, commit, push if a remote exists |
-| `/ui-pass` | UI work | Impeccable, ui-critic, audit and screenshots, repeated until it passes |
+| `/ui-pass` | UI work | Asks for 1–3 reference screenshots/URLs (saved in `design/refs/` with what I like), runs `impeccable shape` for new pages so I pick a direction, then builds and loops ui-critic, audit and screenshots until it passes |
 
 Built into Claude Code: `/clear` (fresh chat), `/context` (how full the chat is), `/model`, `/init`, `/rewind` (undo). A project's own commands win over these inside that project.
 
