@@ -6,7 +6,7 @@ What is installed outside this repo, where it came from, and how to reinstall it
 
 | Plugin | Runs | Install |
 |---|---|---|
-| superpowers | You call it (plan and build, phases 5 and 6); its router runs at session start | `/plugin marketplace add obra/superpowers-marketplace` then `/plugin install superpowers@superpowers-marketplace` |
+| superpowers | You call it (plan and build, phases 5 and 6; its build helpers pick a cheaper model per task); its router runs at session start | `/plugin marketplace add obra/superpowers-marketplace` then `/plugin install superpowers@superpowers-marketplace` |
 | andrej-karpathy-skills | By itself (a skill used when writing code) | `/plugin marketplace add forrestchang/andrej-karpathy-skills` then `/plugin install andrej-karpathy-skills@karpathy-skills` |
 | security-guidance | By itself (hooks on every edit and commit) | `/plugin install security-guidance@claude-plugins-official` |
 | pyright-lsp | By itself (Python type errors) | `/plugin install pyright-lsp@claude-plugins-official` |

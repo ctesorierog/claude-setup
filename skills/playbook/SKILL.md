@@ -20,8 +20,8 @@ Templates for the gate files are in `templates/` next to this file. Copy them in
 | 2 | Understand | Carlos can explain problem + current state in 3 sentences | existing code: `/graphify .`, then "explain it, Mermaid in PLAN.md, 3 weakest parts", baseline test run. New idea: web search + Context7 | domain-expert |
 | 3 | Brainstorm | IDEAS.md with scores and a shortlist | 15 min of Carlos's own ideas first, then `/ideas`, `/deepen <top idea>`, `/panel IDEAS.md`, `thinking-pre-mortem` | judge, domain-expert, skeptic |
 | 4 | Focus and split | shortlist (3–7 items) and owners in PLAN.md | `/grill-with-docs`. Team: one branch per track, one data-contract file between tracks. Risky item: read-only spike first | – |
-| 5 | Plan and architecture | approved PLAN.md with `>> YOU ARE HERE` and decision log | Plan mode ("don't write code; read the files and explain how they work today"), then `superpowers:writing-plans`, then skeptic on PLAN.md + a fresh-chat reviewer ("find what will break; don't rewrite"), then `/checkpoint` | skeptic |
-| 6 | Build | per task: test green, committed, pushed | `superpowers:subagent-driven-development` (implementer writes the test first, then code; reviewer checks against the plan). Carlos reads the diff. `/checkpoint`, then `/clear` | skeptic for anything that produces numbers |
+| 5 | Plan and architecture | approved PLAN.md with `>> YOU ARE HERE` and decision log | Plan mode ("don't write code; read the files and explain how they work today"), then `superpowers:writing-plans`, then `blind-spot-panel` and `/deepen` once on PLAN.md, then skeptic on PLAN.md + a fresh-chat reviewer ("find what will break; don't rewrite"), then `/checkpoint` | skeptic |
+| 6 | Build | per task: test green, committed, pushed | From an Opus chat, `superpowers:subagent-driven-development` (implementer writes the test first, then code; reviewer checks against the plan; its helpers pick a cheaper model per task, Sonnet by default, so Opus only plans and reviews). Carlos reads the diff. `/checkpoint`, then `/clear` | skeptic for anything that produces numbers |
 | 7 | UI | screenshots pass ui-critic | one design reference (DESIGN.md), then `/ui-pass` | ui-critic |
 | 8 | Verify and review | every CRITERIA.md item checked with evidence | skeptic on every claim, `/pr-review-toolkit:review-pr`, `/security-review` if online, final `/panel` | skeptic, judge |
 | 9 | Deliver and learn | delivered, lessons saved | CRITERIA.md checklist, `demo-pitch`, rehearse aloud. Retro: 3 worked, 3 didn't, lasting lessons into `~/.claude/CLAUDE.md` | – |
@@ -55,4 +55,4 @@ No UI skills while planning. No new plugins, skills or features until the projec
 - Going too fast: "Stop and explain what you just did in 5 lines."
 - Uploads live in `context/raw/` and are never edited; work from CONTEXT.md, not from whole big files.
 - Every PLAN.md task names the CRITERIA.md item it serves and the test that proves it. A task that serves no criterion goes to "After" in IDEAS.md.
-- Plan with Opus in Plan mode; for long builds `/model` to Sonnet to save usage. `/panel` costs 3+ agents: use it about twice per project (phases 3 and 8).
+- Opus plans (phase 5) and reviews; `subagent-driven-development` sends coding to cheaper helpers. `/panel` costs 3+ agents: use it about twice per project (phases 3 and 8).

@@ -22,8 +22,8 @@ A plugin is a box of skills, commands and hooks from someone else. An MCP is a p
 | 2 Understand | I can explain it in 3 sentences | `/graphify .` for existing code; `domain-expert` agent |
 | 3 Brainstorm | IDEAS.md with scores and a shortlist | 15 min of my own ideas, then `/ideas`, `/deepen`, `/panel IDEAS.md`, `thinking-pre-mortem` |
 | 4 Focus | Shortlist and owners in PLAN.md | `/grill-with-docs` |
-| 5 Plan | Approved PLAN.md with `>> YOU ARE HERE` | Plan mode, `superpowers:writing-plans`, `skeptic`, `/checkpoint` |
-| 6 Build | Per task: tests green, committed | `superpowers:subagent-driven-development`, `/checkpoint`, `/clear` |
+| 5 Plan | Approved PLAN.md with `>> YOU ARE HERE` | Plan mode, `superpowers:writing-plans`, `blind-spot-panel` and `/deepen` once, `skeptic`, `/checkpoint` |
+| 6 Build | Per task: tests green, committed | `superpowers:subagent-driven-development` (from Opus; helpers code on Sonnet), `/checkpoint`, `/clear` |
 | 7 UI | Screenshots pass ui-critic | `/ui-pass` |
 | 8 Verify | Every criterion has evidence | `skeptic`, `/pr-review-toolkit:review-pr`, final `/panel` |
 | 9 Deliver | Delivered, lessons saved | `demo-pitch`, rehearse, `retro`, lessons into `global/CLAUDE.md` |
@@ -34,7 +34,7 @@ A small task (one file, under 30 minutes) skips the playbook. Only the current p
 
 | Command | When | What it does |
 |---|---|---|
-| `/where` | Lost, or starting a session | 8 lines: phase, what's open, the exact next command |
+| `/where` | Lost, or starting a session | 8 lines: phase, what's open, and the next prompt to paste with its model and tool |
 | `/tour` | After a break, or when another session changed things | Full walkthrough citing the file and line for every point; `/tour context`, `plan`, `files`, `code`, `new` |
 | `/helper` | Unsure which tools fit this project | The `setup-advisor` agent reads this repo and the project: phase, next 3 steps, tools that fit, what's missing. Add "web" (`/helper web <need>`) to also search the Claude docs and skills.sh; it only suggests, never installs |
 | `/kickoff` | New project | Brief into CONTEXT.md, CRITERIA.md, CLAUDE.md and open questions |
