@@ -29,7 +29,7 @@ Removed: `codex` (needs a ChatGPT account).
 | UI | prototype | mattpocock/skills |
 | Learn | teach, wait-what, retro, writing-for-agents | mattpocock/skills |
 
-Install one with `npx skills add <repo> -s <skill> -g -a claude-code --copy -y` (without `-a claude-code -g` they land in `.agents/`, which Claude Code doesn't read). 50 more are parked in `~/.claude/skills-archive/`; move a folder back to use it again.
+Install one with `npx skills add <repo> -s <skill> -g -a claude-code --copy -y` (without `-a claude-code -g` they land in `.agents/`, which Claude Code doesn't read). 50 more are parked in `~/.claude/skills-archive/`; move a folder back to use it again. To find a new one, type `/helper web <what you need>`: it checks the Claude Code docs, then skills.sh, and suggests up to 2 as IDEAS.md rows.
 
 ## MCP servers
 

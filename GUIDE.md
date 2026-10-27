@@ -36,7 +36,7 @@ A small task (one file, under 30 minutes) skips the playbook. Only the current p
 |---|---|---|
 | `/where` | Lost, or starting a session | 8 lines: phase, what's open, the exact next command |
 | `/tour` | After a break, or when another session changed things | Full walkthrough citing the file and line for every point; `/tour context`, `plan`, `files`, `code`, `new` |
-| `/helper` | Unsure which tools fit this project | The `setup-advisor` agent reads this repo and the project: phase, next 3 steps, tools that fit, what's missing |
+| `/helper` | Unsure which tools fit this project | The `setup-advisor` agent reads this repo and the project: phase, next 3 steps, tools that fit, what's missing. Add "web" (`/helper web <need>`) to also search the Claude docs and skills.sh; it only suggests, never installs |
 | `/kickoff` | New project | Brief into CONTEXT.md, CRITERIA.md, CLAUDE.md and open questions |
 | `/ideas` | Brainstorm | Adds scored ideas to IDEAS.md |
 | `/deepen <idea>` | Brainstorm | A deeper, not bigger, version of an idea |
@@ -54,7 +54,7 @@ Built into Claude Code: `/clear` (fresh chat), `/context` (how full the chat is)
 | `skeptic` | Tries to disprove claims and numbers by running things |
 | `domain-expert` | What a top person in the field would do; raw sources and methods |
 | `ui-critic` | Lists what looks AI-made in screenshots; PASS or FAIL |
-| `setup-advisor` | Reads this repo and a project; says which tools fit and what's missing |
+| `setup-advisor` | Reads this repo and a project; says which tools fit and what's missing. Searches the web only when asked with "web" |
 
 Read-only agents can run side by side. Two agents writing the same files will overwrite each other.
 
