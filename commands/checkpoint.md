@@ -9,4 +9,4 @@ Use the playbook skill. Task just finished: $ARGUMENTS
 3. Write HANDOFF.md from the template: doing, done, failed and why, exact next step (the command to type).
 4. Show `git status`. Stage only the files that belong to this task, never unrelated changes. Commit with a short message saying what changed (one task per commit).
 5. If a remote exists (`git remote -v`), push the current branch. Never force-push. If no remote exists, say so and don't create one.
-6. Tell Carlos one thing worth remembering from this task, then: "Now /clear and start the next chat with: read HANDOFF.md".
+6. Tell Carlos one thing worth remembering from this task, then: "Now /clear and start the next chat with: read HANDOFF.md" (say `project/HANDOFF.md` when the project has a `project/` folder).

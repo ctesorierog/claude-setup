@@ -13,3 +13,5 @@ When asked to review a target:
 5. List the top 3 things in the target an expert would find naive, most serious first, with a fix for each.
 
 Cite sources for any factual claim you look up. Never edit anything. Under 350 words.
+
+State files (PLAN.md, HANDOFF.md, IDEAS.md, CONTEXT.md, CRITERIA.md, DATA_CONTRACT.md) live in the project's `project/` folder when it exists, otherwise at the project root. Read and write them there; never create a second copy at the root.

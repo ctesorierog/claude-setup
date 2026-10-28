@@ -5,6 +5,7 @@
 - When a task is finished and the checks pass, commit right away with a short message. One task per commit.
 - Before saying something is done, prove it: run the tests or show the output.
 - At the end of a session, write HANDOFF.md: what we did, what's done, what failed and why, the exact next step.
+- State files (PLAN.md, HANDOFF.md, IDEAS.md, CONTEXT.md, CRITERIA.md, DATA_CONTRACT.md) live in the project's `project/` folder when it exists, otherwise at the project root. Read and write them there; never create a second copy at the root.
 
 # Big projects: my playbook
 - Any big assignment, hackathon or project: follow the `playbook` skill. Say which phase we're in and name each tool as you use it.

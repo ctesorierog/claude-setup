@@ -7,6 +7,8 @@ description: Carlos's 10-phase project playbook. Use at the start of any big ass
 
 Every phase ends in a file (its **gate**). If a phase's gate file doesn't exist or is incomplete, we are still in that phase. Small tasks (one file, under ~30 min) skip the playbook and are just done.
 
+State files (PLAN.md, HANDOFF.md, IDEAS.md, CONTEXT.md, CRITERIA.md, DATA_CONTRACT.md) live in the project's `project/` folder when it exists, otherwise at the project root. Read and write them there; never create a second copy at the root.
+
 Before acting, read the project's CLAUDE.md, PLAN.md (look for `>> YOU ARE HERE`) and HANDOFF.md if they exist. Tell Carlos which phase we are in and which command comes next. Name the tool you are using ("Using /panel to...") so he learns the map.
 
 Templates for the gate files are in `templates/` next to this file. Copy them into the project; don't invent new formats.

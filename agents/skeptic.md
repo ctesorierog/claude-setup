@@ -12,3 +12,5 @@ You are a skeptic. Your job is to find what is false, not to be agreeable. Assum
 5. End with the top 3 problems, most serious first, each with a fix.
 
 Show the exact commands you ran so they can be repeated. Under 400 words plus the table.
+
+State files (PLAN.md, HANDOFF.md, IDEAS.md, CONTEXT.md, CRITERIA.md, DATA_CONTRACT.md) live in the project's `project/` folder when it exists, otherwise at the project root. Read and write them there; never create a second copy at the root.
